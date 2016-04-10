@@ -10,7 +10,7 @@
 							http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
 
-	<context:component-scan base-package="com.spring.ws.demo.endpoint" />
+	<context:component-scan base-package="com.spring.ws.demo" />
 	<sws:annotation-driven />
 
 	<bean id="EmployeeDetailsService"
@@ -22,7 +22,7 @@
 				<property name="inline" value="true" />
 				<property name="xsds">
 					<list>
-						<value>schemas/EmployeeDetails.xsd</value>
+						<value>schemas/EmployeeServiceOperations.xsd</value>
 					</list>
 				</property>
 			</bean>

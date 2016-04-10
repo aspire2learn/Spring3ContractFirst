@@ -1,5 +1,8 @@
+com\spring\ws\demo\service\EmployeeService.class
+com\spring\ws\demo\model\Employee.class
 com\spring\ws\demo\model\package-info.class
 com\spring\ws\demo\model\EmployeeResponse.class
 com\spring\ws\demo\model\EmployeeRequest.class
 com\spring\ws\demo\model\ObjectFactory.class
 com\spring\ws\demo\endpoint\EmployeeEndpoint.class
+com\spring\ws\demo\service\EmployeeServiceImpl.class

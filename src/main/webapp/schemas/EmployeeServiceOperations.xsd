@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+xmlns="http://com/spring/ws/demo/model" 
+xmlns:employee="http://model.demo.ws.spring.com" 
+targetNamespace="http://com/spring/ws/demo/model" elementFormDefault="qualified">
+
+	<xsd:import namespace="http://model.demo.ws.spring.com" schemaLocation="EmployeeDetails.xsd"/>
+	<xsd:element name="EmployeeRequest">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="empId" type="xsd:string"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="EmployeeResponse">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EmployeeDetails" type="employee:Employee"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>
